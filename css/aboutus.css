@@ -1,0 +1,468 @@
+@import "./font.css";
+.container-fluid {
+    margin: 0;
+    padding: 0
+}
+
+
+#header .container-fluid {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* background-image: url(../Assets/background/about.jpg);
+    background-position: fixed; */
+}
+
+#header .container-fluid::before {
+    position: absolute;
+    content: '';
+    background-image: linear-gradient(45deg, #00b8f0ab, #0d99d5de, #064066);
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+}
+
+#header .container-fluid .hero_bg{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    top: 55%;
+    right: 10%;
+    transform: translate(0,-50%);
+    object-fit: fill;
+    z-index: 100;
+}
+#header .container-fluid .wave_hero{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+    transform: rotateY(0deg);
+}
+
+#header .container-fluid .header {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100;
+    padding-left: 20px;
+}
+#header .container-fluid .header h2:before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    background-color: #fff;
+}
+#header .container-fluid .header h2 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 800;
+    font-family: "oswald", sans-serif;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+#header .container-fluid .header p {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 300;
+    font-family: "poppins", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    #header .container-fluid h2 {
+        font-size: 65px;
+        filter: drop-shadow(3px 3px 0px #00B9F0)
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #header .container-fluid h2 {
+        font-size: 30px;
+        filter: drop-shadow(3px 2px 0px #00B9F0)
+    }
+    .vision {
+        font-size: 14px!important
+    }
+}
+
+.top-contain-head {
+    margin-top: 2em;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    color: #666!important
+}
+
+.top-contain-head i {
+    color: #c93030!important
+}
+
+.top-contain-para {
+    margin-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #757575
+}
+
+.card {
+    border: 0;
+    background: #f5f5f5
+}
+
+.card-title {
+    color: #666;
+    padding-top: 50px;
+    font-size: 1.3em
+}
+
+.card-text {
+    padding: 30px 20px!important;
+    border: 1px solid #ddd;
+    background: #fff;
+    letter-spacing: normal;
+    font-weight: 400;
+    color: #666
+}
+
+.card-text strong {
+    margin-bottom: 10px!important
+}
+
+.card-text .card-list {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif
+}
+
+.card-text .card-list i {
+    color: #0096FF;
+    font-size: 18px;
+    padding: 0 10px
+}
+
+.lead {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif
+}
+
+#more {
+    display: none
+}
+
+.vision {
+    line-height: 26px;
+    padding: 40px 30px 30px!important;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300
+}
+
+.footer-top {
+    border-top: dashed 1px #0000006b;
+    z-index: 100;
+    background: #fff;
+    margin-bottom: 80px;
+}
+
+.clients-offer h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.clients-offer h2 {
+    font-size: 10px;
+    color: #686868
+}
+
+.clients-offer li {
+    list-style: circle;
+    font-weight: 500;
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 26px;
+    color: #757575
+}
+
+.clients-decs {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.clients-says {
+    position: relative
+}
+
+.clients-says .carousel-inner {
+    position: relative;
+    height: 230px;
+    width: 100%;
+    overflow: hidden
+}
+
+.clients-says h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 20px
+}
+
+.clients-says .carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all .5s ease
+}
+
+.clients-says .carousel-item {
+    height: 100%
+}
+
+.clients-says .carousel-item .caro-img {
+    width: 100%;
+    height: 180px;
+    background-image: url(../Assets/Svg/testimonial.svg);
+    object-fit: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.clients-says .carousel-item .carousel-caption {
+    bottom: 50px;
+    letter-spacing: 1px;
+    bottom: 0!important;
+    height: 100%;
+    align-items: unset;
+    overflow: hidden
+}
+
+.caro-cap {
+    margin-bottom: 0;
+    padding: 10px 20px;
+    height: 120px;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    overflow-y: scroll;
+    top: 0px;
+    position: relative;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    text-align: left;
+    z-index: 1000;
+    bottom: 0;
+    left: 10%
+}
+
+.details .img {
+    width: 80px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.details .img img {
+    width: 54px;
+    height: 54px;
+    z-index: 1000
+}
+
+.details .text {
+    width: calc(100% - 80px)!important;
+    padding: 10px;
+    color: #444
+}
+
+.details .text .name {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif
+}
+
+.details .type {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.clients-says .carousel-control-prev {
+    position: absolute;
+    border-radius: 3px;
+    top: -30px;
+    bottom: 70px;
+    left: calc(100% - 80px);
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    color: #888;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: 1;
+    transition: opacity .15s ease;
+    background: #eee
+}
+
+.clients-says .carousel-control-next {
+    position: absolute;
+    border-radius: 3px;
+    right: 30px;
+    top: -30px;
+    bottom: 70px;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    color: #888;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: 1;
+    transition: opacity .15s ease;
+    background: #eee
+}
+
+.clients-says .fa-left, .fa-right {
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+.offer-head {
+    font-family: "Poppins", sans-serif;
+    color: #666
+}
+
+.offer-head span {
+    font-size: 18px;
+    color: #515bd4
+}
+
+@media only screen and (max-width: 992px) {
+    .card-text .card-list {
+        font-size: 12px
+    }
+    .lead {
+        font-size: 16px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .top-contain-head {
+        font-size: 26px
+    }
+    .top-contain-para {
+        font-size: 16px
+    }
+    .footer-top .col-md-5 {
+        padding-bottom: 3rem
+    }
+    .clients-says .carousel-item .carousel-caption {
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+        font-weight: 400;
+        line-height: 16px;
+        padding-top: 0
+    }
+    .user-icon {
+        position: absolute;
+        z-index: 1000;
+        top: 175px;
+        left: 50px
+    }
+    .details {
+        display: flex;
+        position: absolute;
+        z-index: 1000;
+        bottom: 0;
+        left: 10%
+    }
+    .clients-says .carousel {
+        position: relative;
+        transition: all .5s ease
+    }
+    .clients-says .carousel-item .caro-img {
+        height: 150px
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .caro-cap {
+        font-size: 11px;
+        top: 0px;
+    }
+    .lead br {
+        display: none
+    }
+    .top-contain-head {
+        font-size: 22px
+    }
+    .top-contain-para {
+        font-size: 13px
+    }
+    #header .container-fluid{
+        height: 400px;
+    }
+    #header .container-fluid::after{
+        height: 400px;
+    }
+    #header .container-fluid::before{
+        height: 400px;
+    }
+}
+
+.caro-cap::-webkit-scrollbar {
+    width: 0px
+}
+
+.caro-cap::-webkit-scrollbar-track {
+    background: transparent
+}
+
+.caro-cap::-webkit-scrollbar-thumb {
+    background: #00B9F0;
+    border-radius: 20px
+}
+
+.caro-cap::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+    width: 0
+}
